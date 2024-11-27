@@ -1,4 +1,4 @@
-[](banner.png)
+![Banner](banner.png)
 # Merhaba, ben @bykeremx 👋
 
 **Türkçe:**
