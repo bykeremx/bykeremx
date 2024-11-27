@@ -5,7 +5,6 @@
 - 🌱 Şu anda Node.js ve React üzerine daha fazla şey öğreniyorum.
 - 💞️ Web geliştirme projeleri ve tasarımla ilgili işbirlikleri yapmak istiyorum.
 - 🎨 Resim çizmeyi ve elektronik müzikle ilgileniyorum.
-- 🎓 Dicle Üniversitesi Bilgisayar Programcılığı ve Anadolu Üniversitesi Yönetim Bilişim Sistemleri (Açıköğretim) öğrencisiyim. Kendimi sürekli geliştirme aşamasındayım.
 - 📫 Bana LinkedIn ve Instagram üzerinden ulaşabilirsiniz:  
   [LinkedIn](https://www.linkedin.com/in/kerem-mutlu-815499271/) | [Instagram](https://www.instagram.com/kkeremutluk)
 - ⚡ Eğlenceli bilgi: Yeni teknolojileri keşfetmek ve yaratıcı projelerde çalışmak çok hoşuma gidiyor.
@@ -15,7 +14,6 @@
 - 🌱 I’m currently learning more about Node.js and React.
 - 💞️ I’m looking to collaborate on web development projects and design.
 - 🎨 I enjoy drawing and am passionate about electronic music.
-- 🎓 I’m studying Computer Programming at Dicle University and Management Information Systems at Anadolu University (open education). I’m in a constant process of self-development.
 - 📫 How to reach me:  
   [LinkedIn](https://www.linkedin.com/in/yourprofile) | [Instagram](https://www.instagram.com/yourprofile)
 - ⚡ Fun fact: I enjoy exploring new technologies and working on creative projects.
