@@ -1,3 +1,4 @@
+[banner.png]
 # Merhaba, ben @bykeremx 👋
 
 **Türkçe:**
