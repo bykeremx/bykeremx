@@ -1,4 +1,4 @@
-[![Banner](banner.png)](url)
+
 
 # Hi there, I'm Kerem! 👋
 
