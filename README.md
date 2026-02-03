@@ -2,7 +2,7 @@
   
 # 👨‍💻 Kerem Mutlu
 
-### Full-Stack Developer | Creative Technologist | Music Producer
+### Full Stack Developer
 
 *Blending code with creativity to build exceptional digital experiences*
 
