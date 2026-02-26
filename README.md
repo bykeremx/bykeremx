@@ -1,108 +1,156 @@
 <div align="center">
-  
-# 👨‍💻 Kerem Mutlu
 
-### Full Stack Developer
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1f2e,100:7FDBCA&height=200&section=header&text=Kerem%20Mutlu&fontSize=60&fontColor=7FDBCA&fontAlignY=38&desc=Full%20Stack%20Developer&descSize=18&descAlignY=58&descColor=a0aec0&animation=fadeIn" width="100%" />
 
-*Blending code with creativity to build exceptional digital experiences*
+</div>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/keremutlu)
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/kkeremutlu)
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white)](#)
+<div align="center">
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=16&duration=3000&pause=1000&color=7FDBCA&center=true&vCenter=true&width=500&lines=Blending+code+with+creativity+✦;Building+scalable+web+applications+✦;Technology+%2B+Creativity+%3D+Innovation+✦)](https://git.io/typing-svg)
 
 </div>
 
 ---
 
-## 🎯 About Me
-```javascript
-const kerem = {
-    role: "Full-Stack Developer",
-    location: "Diyarbakır, Turkey",
-    currentFocus: ["Node.js", "React", "Modern Web Architecture"],
-    passions: ["Electronic Music Production", "Digital Art", "UI/UX Design"],
-    philosophy: "Technology + Creativity = Innovation"
+<div align="center">
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230A66C2.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/keremutlu)&nbsp;
+[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/kkeremutlu)&nbsp;
+[![Portfolio](https://img.shields.io/badge/Portfolio-%23FF7139.svg?style=for-the-badge&logo=Firefox-Browser&logoColor=white)](#)&nbsp;
+[![Profile Views](https://komarev.com/ghpvc/?username=bykeremx&style=for-the-badge&color=7FDBCA&label=PROFILE+VIEWS)](https://github.com/bykeremx)
+
+</div>
+
+<br/>
+
+## ◈ About Me
+
+```typescript
+const kerem: Developer = {
+  role        : "Full-Stack Developer",
+  location    : "Diyarbakır, Turkey 🇹🇷",
+  currentFocus: ["Node.js", "React", "Modern Web Architecture"],
+  passions    : ["Electronic Music Production 🎹", "Digital Art ✏️", "UI/UX Design"],
+  philosophy  : "Technology + Creativity = Innovation",
+  openTo      : "Collaborating on innovative web projects 🤝",
 };
 ```
 
-- 🔭 Building scalable web applications with **Laravel** & **React**
-- 🌱 Deepening expertise in **Node.js** ecosystem and modern frontend frameworks
-- 💡 Always exploring the intersection of technology and creative expression
-- 🤝 Open to collaborating on innovative web projects
+<table>
+<tr>
+<td>
 
----
+- 🔭 &nbsp;Building scalable apps with **Laravel** & **React**
+- 🌱 &nbsp;Deepening expertise in **Node.js** ecosystem
+- 💡 &nbsp;Exploring the intersection of tech & creative expression
+- 🎵 &nbsp;Producing electronic music in my free time
+- 🤝 &nbsp;Open to collaborating on innovative projects
 
-## 🛠️ Tech Stack
+</td>
+</tr>
+</table>
+
+<br/>
+
+## ◈ Tech Stack
+
+<details open>
+<summary><b>⬡ Languages</b></summary>
+<br/>
+
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)&nbsp;
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)&nbsp;
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)&nbsp;
+![Java](https://img.shields.io/badge/Java-007396?style=flat-square&logo=openjdk&logoColor=white)&nbsp;
+![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white)
+
+</details>
+
+<details open>
+<summary><b>⬡ Frontend</b></summary>
+<br/>
+
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)&nbsp;
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)&nbsp;
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)&nbsp;
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)&nbsp;
+![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=flat-square&logo=jquery&logoColor=white)
+
+</details>
+
+<details open>
+<summary><b>⬡ Backend & Databases</b></summary>
+<br/>
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)&nbsp;
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white)&nbsp;
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)&nbsp;
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)&nbsp;
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
+
+</details>
+
+<details open>
+<summary><b>⬡ Tools & Platforms</b></summary>
+<br/>
+
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)&nbsp;
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)&nbsp;
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)&nbsp;
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white)&nbsp;
+![Photoshop](https://img.shields.io/badge/Photoshop-31A8FF?style=flat-square&logo=adobe-photoshop&logoColor=white)
+
+</details>
+
+<br/>
+
+## ◈ GitHub Analytics
 
 <div align="center">
 
-### Languages
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)
-![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
-
-### Frontend Development
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-
-### Backend & Databases
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
-![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
-
-### Tools & Platforms
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-![Photoshop](https://img.shields.io/badge/Photoshop-31A8FF?style=for-the-badge&logo=adobe-photoshop&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=bykeremx&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&title_color=7FDBCA&icon_color=7FDBCA&bg_color=0d1117" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=bykeremx&layout=compact&theme=tokyonight&hide_border=true&title_color=7FDBCA&bg_color=0d1117" />
 
 </div>
 
----
-
-## 📊 GitHub Analytics
-
 <div align="center">
-  
-![Kerem's GitHub Stats](https://github-readme-stats.vercel.app/api?username=bykeremx&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=bykeremx&layout=compact&theme=tokyonight&hide_border=true)
-
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=bykeremx&theme=tokyonight&hide_border=true)
+<img width="70%" src="https://github-readme-streak-stats.herokuapp.com/?user=bykeremx&theme=tokyonight&hide_border=true&ring=7FDBCA&fire=FF6B6B&currStreakLabel=7FDBCA&background=0d1117" />
 
 </div>
 
----
+<div align="center">
 
-## 🎵 Beyond Code
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=bykeremx&theme=tokyo-night&bg_color=0d1117&color=7FDBCA&line=7FDBCA&point=FF6B6B&hide_border=true" width="100%" />
 
-When I'm not coding, you'll find me:
-- 🎹 Producing electronic music and exploring sound design
-- ✏️ Creating digital illustrations and visual art
-- 📚 Reading about emerging technologies and design trends
-- 🌍 Contributing to open-source projects
+</div>
+
+<br/>
+
+## ◈ Beyond Code
+
+<div align="center">
+
+| 🎹 Music | ✏️ Art | 📚 Learning | 🌍 OSS |
+|:---:|:---:|:---:|:---:|
+| Electronic music production & sound design | Digital illustrations & visual art | Emerging tech & design trends | Contributing to open-source |
+
+</div>
+
+<br/>
 
 ---
 
 <div align="center">
 
-### 💭 Favorite Quote
+*" Code is like humor. When you have to explain it, it's bad. "*
 
-*"Code is like humor. When you have to explain it, it's bad."*  
-— Cory House
+**— Cory House**
 
----
+<br/>
 
-**⭐ If you find my work interesting, feel free to star my repositories!**
+**⭐ Found something interesting? Feel free to star my repositories!**
 
-![Profile Views](https://komarev.com/ghpvc/?username=bykeremx&color=blueviolet&style=for-the-badge)
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:7FDBCA,100:0d1117&height=100&section=footer&animation=fadeIn" width="100%" />
 
 </div>
