@@ -1,1 +1,543 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 860 280" width="860" height="280">
+  <defs>
 
+    <!-- ═══ FONTS ═══ -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@900&amp;family=Noto+Serif+JP:wght@700&amp;display=swap');
+
+      .name-text {
+        font-family: 'Cinzel', 'Georgia', serif;
+        font-size: 72px;
+        font-weight: 900;
+        fill: #ffffff;
+        letter-spacing: 8px;
+        text-anchor: middle;
+        dominant-baseline: middle;
+      }
+      .jp-text {
+        font-family: 'Noto Serif JP', serif;
+        font-size: 13px;
+        fill: #ff9d4d;
+        letter-spacing: 8px;
+        text-anchor: middle;
+        dominant-baseline: middle;
+      }
+      .sub-text {
+        font-family: 'Courier New', monospace;
+        font-size: 11px;
+        font-weight: 700;
+        fill: #ffd470;
+        letter-spacing: 3px;
+        text-anchor: middle;
+        dominant-baseline: middle;
+      }
+      .village-text {
+        font-family: 'Noto Serif JP', serif;
+        font-size: 9px;
+        fill: #ff6b0077;
+        letter-spacing: 5px;
+        text-anchor: middle;
+        dominant-baseline: middle;
+      }
+      .corner-kanji {
+        font-family: 'Noto Serif JP', serif;
+        font-size: 11px;
+        fill: #ff6b0088;
+        text-anchor: middle;
+        dominant-baseline: middle;
+      }
+      .kanji-bg {
+        font-family: 'Noto Serif JP', serif;
+        fill: #ff6b00;
+        text-anchor: middle;
+        dominant-baseline: middle;
+      }
+    </style>
+
+    <!-- ═══ GRADIENTS ═══ -->
+    <radialGradient id="bgGrad" cx="50%" cy="20%" r="75%">
+      <stop offset="0%"   stop-color="#3a0c00"/>
+      <stop offset="45%"  stop-color="#140300"/>
+      <stop offset="100%" stop-color="#050000"/>
+    </radialGradient>
+
+    <radialGradient id="bgGrad2" cx="50%" cy="90%" r="50%">
+      <stop offset="0%"   stop-color="#1a0500" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#050000" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#ff4500" stop-opacity="0"/>
+      <stop offset="20%"  stop-color="#ff4500" stop-opacity="0.8"/>
+      <stop offset="50%"  stop-color="#ff6b00" stop-opacity="1"/>
+      <stop offset="80%"  stop-color="#ff4500" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ff4500" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="divGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#ff6b00" stop-opacity="0"/>
+      <stop offset="25%"  stop-color="#ff4500" stop-opacity="0.8"/>
+      <stop offset="50%"  stop-color="#ffd470" stop-opacity="1"/>
+      <stop offset="75%"  stop-color="#ff4500" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ff6b00" stop-opacity="0"/>
+    </linearGradient>
+
+    <radialGradient id="rasenGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#ff6b00" stop-opacity="0.35"/>
+      <stop offset="60%"  stop-color="#ff4400" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#ff2200" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="nameGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#ff6b00" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#ff6b00" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="fireGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%"   stop-color="#ff2000" stop-opacity="0.55"/>
+      <stop offset="40%"  stop-color="#ff4400" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#ff6b00" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="boltGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="30%"  stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="60%"  stop-color="#ffcc88" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ff6b00" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- ═══ FILTERS ═══ -->
+    <filter id="nameShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="3 1 0 0 0   1 0.3 0 0 0   0 0 0 0 0   0 0 0 2 0" result="orange"/>
+      <feMerge><feMergeNode in="orange"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <filter id="glowFilter" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <filter id="fireBlur">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+
+  </defs>
+
+  <!-- ═══════════════════════════════════════
+       LAYER 0 — BACKGROUND
+  ═══════════════════════════════════════ -->
+  <rect width="860" height="280" fill="url(#bgGrad)"/>
+  <rect width="860" height="280" fill="url(#bgGrad2)"/>
+
+  <!-- ═══════════════════════════════════════
+       LAYER 1 — KANJI BACKGROUND FIELD
+  ═══════════════════════════════════════ -->
+  <g opacity="1">
+    <!-- Row 1 -->
+    <text class="kanji-bg" x="42"  y="38"  font-size="22" opacity="0.055">忍</text>
+    <text class="kanji-bg" x="118" y="52"  font-size="18" opacity="0.04">術</text>
+    <text class="kanji-bg" x="210" y="30"  font-size="26" opacity="0.05">印</text>
+    <text class="kanji-bg" x="320" y="44"  font-size="16" opacity="0.045">封</text>
+    <text class="kanji-bg" x="430" y="28"  font-size="22" opacity="0.04">解</text>
+    <text class="kanji-bg" x="560" y="48"  font-size="20" opacity="0.05">木</text>
+    <text class="kanji-bg" x="660" y="32"  font-size="24" opacity="0.045">葉</text>
+    <text class="kanji-bg" x="780" y="50"  font-size="18" opacity="0.04">火</text>
+    <!-- Row 2 -->
+    <text class="kanji-bg" x="78"  y="110" font-size="20" opacity="0.04">水</text>
+    <text class="kanji-bg" x="168" y="130" font-size="16" opacity="0.05">雷</text>
+    <text class="kanji-bg" x="265" y="105" font-size="24" opacity="0.04">風</text>
+    <text class="kanji-bg" x="390" y="118" font-size="18" opacity="0.045">土</text>
+    <text class="kanji-bg" x="500" y="100" font-size="22" opacity="0.04">螺</text>
+    <text class="kanji-bg" x="610" y="122" font-size="16" opacity="0.05">旋</text>
+    <text class="kanji-bg" x="720" y="108" font-size="20" opacity="0.04">丸</text>
+    <text class="kanji-bg" x="815" y="130" font-size="18" opacity="0.045">影</text>
+    <!-- Row 3 -->
+    <text class="kanji-bg" x="52"  y="195" font-size="18" opacity="0.045">分</text>
+    <text class="kanji-bg" x="148" y="210" font-size="22" opacity="0.04">身</text>
+    <text class="kanji-bg" x="240" y="188" font-size="16" opacity="0.05">千</text>
+    <text class="kanji-bg" x="355" y="200" font-size="24" opacity="0.04">鳥</text>
+    <text class="kanji-bg" x="470" y="190" font-size="18" opacity="0.045">我</text>
+    <text class="kanji-bg" x="580" y="205" font-size="20" opacity="0.04">愛</text>
+    <text class="kanji-bg" x="688" y="192" font-size="16" opacity="0.05">羅</text>
+    <text class="kanji-bg" x="800" y="208" font-size="22" opacity="0.04">道</text>
+    <!-- Row 4 -->
+    <text class="kanji-bg" x="100" y="258" font-size="16" opacity="0.04">業</text>
+    <text class="kanji-bg" x="300" y="265" font-size="20" opacity="0.045">刃</text>
+    <text class="kanji-bg" x="530" y="255" font-size="18" opacity="0.04">命</text>
+    <text class="kanji-bg" x="740" y="262" font-size="16" opacity="0.045">絆</text>
+
+    <!-- Animated kanji (SMIL drift) -->
+    <text class="kanji-bg" x="150" y="75" font-size="28" opacity="0">
+      忍
+      <animate attributeName="opacity" values="0;0.07;0.07;0" dur="9s" repeatCount="indefinite" begin="1s"/>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-18; 0,-18; 0,0" dur="9s" repeatCount="indefinite" begin="1s"/>
+    </text>
+    <text class="kanji-bg" x="680" y="160" font-size="24" opacity="0">
+      術
+      <animate attributeName="opacity" values="0;0.06;0.06;0" dur="11s" repeatCount="indefinite" begin="3s"/>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-22; 0,-22; 0,0" dur="11s" repeatCount="indefinite" begin="3s"/>
+    </text>
+    <text class="kanji-bg" x="400" y="230" font-size="32" opacity="0">
+      螺
+      <animate attributeName="opacity" values="0;0.05;0.05;0" dur="13s" repeatCount="indefinite" begin="5s"/>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-25; 0,-25; 0,0" dur="13s" repeatCount="indefinite" begin="5s"/>
+    </text>
+    <text class="kanji-bg" x="240" y="200" font-size="20" opacity="0">
+      旋
+      <animate attributeName="opacity" values="0;0.07;0.07;0" dur="8s" repeatCount="indefinite" begin="0.5s"/>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-16; 0,-16; 0,0" dur="8s" repeatCount="indefinite" begin="0.5s"/>
+    </text>
+    <text class="kanji-bg" x="600" y="60" font-size="26" opacity="0">
+      丸
+      <animate attributeName="opacity" values="0;0.06;0.06;0" dur="10s" repeatCount="indefinite" begin="2s"/>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-20; 0,-20; 0,0" dur="10s" repeatCount="indefinite" begin="2s"/>
+    </text>
+  </g>
+
+  <!-- ═══════════════════════════════════════
+       LAYER 2 — GROUND FIRE
+  ═══════════════════════════════════════ -->
+  <rect x="0" y="200" width="860" height="80" fill="url(#fireGrad)" filter="url(#fireBlur)">
+    <animate attributeName="opacity" values="0.4;0.75;0.4" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="y" values="210;195;210" dur="3s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Fire tongues -->
+  <ellipse cx="200" cy="268" rx="40" ry="18" fill="#ff3300" opacity="0.0" filter="url(#fireBlur)">
+    <animate attributeName="opacity" values="0;0.4;0.2;0.5;0" dur="2.2s" repeatCount="indefinite" begin="0s"/>
+    <animate attributeName="ry" values="18;28;16;30;18" dur="2.2s" repeatCount="indefinite" begin="0s"/>
+    <animate attributeName="cy" values="268;252;265;248;268" dur="2.2s" repeatCount="indefinite" begin="0s"/>
+  </ellipse>
+  <ellipse cx="430" cy="270" rx="50" ry="20" fill="#ff4400" opacity="0" filter="url(#fireBlur)">
+    <animate attributeName="opacity" values="0;0.5;0.25;0.55;0" dur="2.8s" repeatCount="indefinite" begin="0.4s"/>
+    <animate attributeName="ry" values="20;32;18;34;20" dur="2.8s" repeatCount="indefinite" begin="0.4s"/>
+    <animate attributeName="cy" values="270;250;265;245;270" dur="2.8s" repeatCount="indefinite" begin="0.4s"/>
+  </ellipse>
+  <ellipse cx="670" cy="265" rx="38" ry="16" fill="#ff3300" opacity="0" filter="url(#fireBlur)">
+    <animate attributeName="opacity" values="0;0.4;0.2;0.45;0" dur="2.5s" repeatCount="indefinite" begin="1s"/>
+    <animate attributeName="ry" values="16;26;14;28;16" dur="2.5s" repeatCount="indefinite" begin="1s"/>
+    <animate attributeName="cy" values="265;248;262;244;265" dur="2.5s" repeatCount="indefinite" begin="1s"/>
+  </ellipse>
+
+  <!-- ═══════════════════════════════════════
+       LAYER 3 — SEAL RINGS (spinning)
+  ═══════════════════════════════════════ -->
+  <g transform="translate(430,140)">
+
+    <!-- Ring 5 — outermost slow -->
+    <circle r="195" fill="none" stroke="#ff6b00" stroke-width="0.8" stroke-opacity="0.15"
+            stroke-dasharray="6,18">
+      <animateTransform attributeName="transform" type="rotate"
+        values="0;360" dur="28s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Ring 4 -->
+    <circle r="170" fill="none" stroke="#ff4500" stroke-width="1" stroke-opacity="0.18"
+            stroke-dasharray="3,9">
+      <animateTransform attributeName="transform" type="rotate"
+        values="0;-360" dur="22s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Ring 3 -->
+    <circle r="145" fill="none" stroke="#ffd470" stroke-width="0.8" stroke-opacity="0.14"
+            stroke-dasharray="4,14">
+      <animateTransform attributeName="transform" type="rotate"
+        values="0;360" dur="17s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Ring 2 -->
+    <circle r="115" fill="none" stroke="#ff6b00" stroke-width="1.2" stroke-opacity="0.22"
+            stroke-dasharray="8,16">
+      <animateTransform attributeName="transform" type="rotate"
+        values="0;-360" dur="12s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Ring 1 — innermost fast -->
+    <circle r="88" fill="none" stroke="#ff9d4d" stroke-width="1" stroke-opacity="0.2"
+            stroke-dasharray="2,6">
+      <animateTransform attributeName="transform" type="rotate"
+        values="0;360" dur="7s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Eight-trigram dots on ring 2 -->
+    <g stroke-opacity="0.5">
+      <animateTransform attributeName="transform" type="rotate"
+        values="0;-360" dur="12s" repeatCount="indefinite"/>
+      <!-- 8 dots at 45° intervals on r=115 -->
+      <circle cx="115"  cy="0"    r="2.5" fill="#ff6b00" opacity="0.35"/>
+      <circle cx="81"   cy="81"   r="2"   fill="#ff6b00" opacity="0.25"/>
+      <circle cx="0"    cy="115"  r="2.5" fill="#ff6b00" opacity="0.35"/>
+      <circle cx="-81"  cy="81"   r="2"   fill="#ff6b00" opacity="0.25"/>
+      <circle cx="-115" cy="0"    r="2.5" fill="#ff6b00" opacity="0.35"/>
+      <circle cx="-81"  cy="-81"  r="2"   fill="#ff6b00" opacity="0.25"/>
+      <circle cx="0"    cy="-115" r="2.5" fill="#ff6b00" opacity="0.35"/>
+      <circle cx="81"   cy="-81"  r="2"   fill="#ff6b00" opacity="0.25"/>
+    </g>
+
+    <!-- Rasengan center glow -->
+    <circle r="62" fill="url(#rasenGrad)">
+      <animate attributeName="r" values="56;68;56" dur="2.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+
+  </g>
+
+  <!-- ═══════════════════════════════════════
+       LAYER 4 — PULSE RINGS
+  ═══════════════════════════════════════ -->
+  <circle cx="430" cy="140" r="10" fill="none" stroke="#ff6b00" stroke-width="1.5" opacity="0">
+    <animate attributeName="r"       values="10;240"  dur="4s" repeatCount="indefinite" begin="0s"/>
+    <animate attributeName="opacity" values="0.7;0"   dur="4s" repeatCount="indefinite" begin="0s"/>
+    <animate attributeName="stroke-width" values="1.5;0.3" dur="4s" repeatCount="indefinite" begin="0s"/>
+  </circle>
+  <circle cx="430" cy="140" r="10" fill="none" stroke="#ff4500" stroke-width="1.5" opacity="0">
+    <animate attributeName="r"       values="10;240"  dur="4s" repeatCount="indefinite" begin="1.33s"/>
+    <animate attributeName="opacity" values="0.7;0"   dur="4s" repeatCount="indefinite" begin="1.33s"/>
+    <animate attributeName="stroke-width" values="1.5;0.3" dur="4s" repeatCount="indefinite" begin="1.33s"/>
+  </circle>
+  <circle cx="430" cy="140" r="10" fill="none" stroke="#ffd470" stroke-width="1" opacity="0">
+    <animate attributeName="r"       values="10;240"  dur="4s" repeatCount="indefinite" begin="2.66s"/>
+    <animate attributeName="opacity" values="0.5;0"   dur="4s" repeatCount="indefinite" begin="2.66s"/>
+    <animate attributeName="stroke-width" values="1;0.2" dur="4s" repeatCount="indefinite" begin="2.66s"/>
+  </circle>
+
+  <!-- ═══════════════════════════════════════
+       LAYER 5 — EMBERS
+  ═══════════════════════════════════════ -->
+  <!-- Ember macro: x, startY, color, dur, begin, driftX -->
+  <g opacity="1">
+    <circle cx="60"  cy="270" r="2"   fill="#ff6b00" opacity="0">
+      <animate attributeName="opacity" values="0;1;0.8;0"   dur="4s"   repeatCount="indefinite" begin="0s"/>
+      <animate attributeName="cy"      values="270;150;90"  dur="4s"   repeatCount="indefinite" begin="0s"/>
+      <animate attributeName="cx"      values="60;72;80"    dur="4s"   repeatCount="indefinite" begin="0s"/>
+      <animate attributeName="r"       values="2;1.5;0.5"   dur="4s"   repeatCount="indefinite" begin="0s"/>
+    </circle>
+    <circle cx="140" cy="275" r="1.5" fill="#ffd470" opacity="0">
+      <animate attributeName="opacity" values="0;1;0.7;0"   dur="5s"   repeatCount="indefinite" begin="1.2s"/>
+      <animate attributeName="cy"      values="275;160;80"  dur="5s"   repeatCount="indefinite" begin="1.2s"/>
+      <animate attributeName="cx"      values="140;128;118" dur="5s"   repeatCount="indefinite" begin="1.2s"/>
+      <animate attributeName="r"       values="1.5;1;0.3"   dur="5s"   repeatCount="indefinite" begin="1.2s"/>
+    </circle>
+    <circle cx="220" cy="268" r="2.5" fill="#ff4400" opacity="0">
+      <animate attributeName="opacity" values="0;0.9;0.6;0" dur="3.5s" repeatCount="indefinite" begin="0.5s"/>
+      <animate attributeName="cy"      values="268;180;100" dur="3.5s" repeatCount="indefinite" begin="0.5s"/>
+      <animate attributeName="cx"      values="220;235;248" dur="3.5s" repeatCount="indefinite" begin="0.5s"/>
+      <animate attributeName="r"       values="2.5;1.5;0.4" dur="3.5s" repeatCount="indefinite" begin="0.5s"/>
+    </circle>
+    <circle cx="300" cy="272" r="2"   fill="#ff9d4d" opacity="0">
+      <animate attributeName="opacity" values="0;1;0.8;0"   dur="4.5s" repeatCount="indefinite" begin="2s"/>
+      <animate attributeName="cy"      values="272;160;70"  dur="4.5s" repeatCount="indefinite" begin="2s"/>
+      <animate attributeName="cx"      values="300;285;272" dur="4.5s" repeatCount="indefinite" begin="2s"/>
+      <animate attributeName="r"       values="2;1.2;0.3"   dur="4.5s" repeatCount="indefinite" begin="2s"/>
+    </circle>
+    <circle cx="380" cy="270" r="1.5" fill="#ff6b00" opacity="0">
+      <animate attributeName="opacity" values="0;1;0.7;0"   dur="3.8s" repeatCount="indefinite" begin="0.8s"/>
+      <animate attributeName="cy"      values="270;170;90"  dur="3.8s" repeatCount="indefinite" begin="0.8s"/>
+      <animate attributeName="cx"      values="380;394;405" dur="3.8s" repeatCount="indefinite" begin="0.8s"/>
+      <animate attributeName="r"       values="1.5;1;0.3"   dur="3.8s" repeatCount="indefinite" begin="0.8s"/>
+    </circle>
+    <circle cx="460" cy="274" r="2"   fill="#ffd470" opacity="0">
+      <animate attributeName="opacity" values="0;0.9;0.6;0" dur="5.2s" repeatCount="indefinite" begin="3s"/>
+      <animate attributeName="cy"      values="274;155;60"  dur="5.2s" repeatCount="indefinite" begin="3s"/>
+      <animate attributeName="cx"      values="460;445;432" dur="5.2s" repeatCount="indefinite" begin="3s"/>
+      <animate attributeName="r"       values="2;1.3;0.4"   dur="5.2s" repeatCount="indefinite" begin="3s"/>
+    </circle>
+    <circle cx="540" cy="269" r="2.5" fill="#ff4400" opacity="0">
+      <animate attributeName="opacity" values="0;1;0.8;0"   dur="4.1s" repeatCount="indefinite" begin="1.5s"/>
+      <animate attributeName="cy"      values="269;158;75"  dur="4.1s" repeatCount="indefinite" begin="1.5s"/>
+      <animate attributeName="cx"      values="540;556;568" dur="4.1s" repeatCount="indefinite" begin="1.5s"/>
+      <animate attributeName="r"       values="2.5;1.5;0.4" dur="4.1s" repeatCount="indefinite" begin="1.5s"/>
+    </circle>
+    <circle cx="620" cy="272" r="1.5" fill="#ff9d4d" opacity="0">
+      <animate attributeName="opacity" values="0;1;0.7;0"   dur="3.6s" repeatCount="indefinite" begin="2.5s"/>
+      <animate attributeName="cy"      values="272;168;85"  dur="3.6s" repeatCount="indefinite" begin="2.5s"/>
+      <animate attributeName="cx"      values="620;605;592" dur="3.6s" repeatCount="indefinite" begin="2.5s"/>
+      <animate attributeName="r"       values="1.5;0.8;0.2" dur="3.6s" repeatCount="indefinite" begin="2.5s"/>
+    </circle>
+    <circle cx="700" cy="267" r="2"   fill="#ff6b00" opacity="0">
+      <animate attributeName="opacity" values="0;0.9;0.7;0" dur="4.7s" repeatCount="indefinite" begin="0.3s"/>
+      <animate attributeName="cy"      values="267;155;65"  dur="4.7s" repeatCount="indefinite" begin="0.3s"/>
+      <animate attributeName="cx"      values="700;715;726" dur="4.7s" repeatCount="indefinite" begin="0.3s"/>
+      <animate attributeName="r"       values="2;1.2;0.3"   dur="4.7s" repeatCount="indefinite" begin="0.3s"/>
+    </circle>
+    <circle cx="790" cy="271" r="2.5" fill="#ffd470" opacity="0">
+      <animate attributeName="opacity" values="0;1;0.8;0"   dur="4.3s" repeatCount="indefinite" begin="1.8s"/>
+      <animate attributeName="cy"      values="271;152;55"  dur="4.3s" repeatCount="indefinite" begin="1.8s"/>
+      <animate attributeName="cx"      values="790;775;762" dur="4.3s" repeatCount="indefinite" begin="1.8s"/>
+      <animate attributeName="r"       values="2.5;1.4;0.3" dur="4.3s" repeatCount="indefinite" begin="1.8s"/>
+    </circle>
+    <!-- Extra small embers -->
+    <circle cx="100" cy="262" r="1"   fill="#ffaa00" opacity="0">
+      <animate attributeName="opacity" values="0;0.8;0" dur="3s" repeatCount="indefinite" begin="0.6s"/>
+      <animate attributeName="cy"      values="262;140"  dur="3s" repeatCount="indefinite" begin="0.6s"/>
+      <animate attributeName="cx"      values="100;112"  dur="3s" repeatCount="indefinite" begin="0.6s"/>
+    </circle>
+    <circle cx="490" cy="262" r="1"   fill="#ff6b00" opacity="0">
+      <animate attributeName="opacity" values="0;0.8;0" dur="3.3s" repeatCount="indefinite" begin="2.2s"/>
+      <animate attributeName="cy"      values="262;145"  dur="3.3s" repeatCount="indefinite" begin="2.2s"/>
+      <animate attributeName="cx"      values="490;476"  dur="3.3s" repeatCount="indefinite" begin="2.2s"/>
+    </circle>
+    <circle cx="750" cy="258" r="1.2" fill="#ff4400" opacity="0">
+      <animate attributeName="opacity" values="0;0.9;0" dur="3.7s" repeatCount="indefinite" begin="0.9s"/>
+      <animate attributeName="cy"      values="258;130"  dur="3.7s" repeatCount="indefinite" begin="0.9s"/>
+      <animate attributeName="cx"      values="750;763"  dur="3.7s" repeatCount="indefinite" begin="0.9s"/>
+    </circle>
+  </g>
+
+  <!-- ═══════════════════════════════════════
+       LAYER 6 — LIGHTNING BOLTS
+  ═══════════════════════════════════════ -->
+  <!-- Left bolt -->
+  <rect x="130" y="18" width="2" height="110" fill="url(#boltGrad)" opacity="0">
+    <animate attributeName="opacity"
+      values="0;0;0;0;0;0;0;0;0;1;0.4;1;0"
+      dur="5s" repeatCount="indefinite" begin="0s"/>
+    <animate attributeName="x" values="130;132;129;131;130" dur="5s" repeatCount="indefinite" begin="0s"/>
+  </rect>
+  <!-- Right bolt -->
+  <rect x="718" y="24" width="1.5" height="95" fill="url(#boltGrad)" opacity="0">
+    <animate attributeName="opacity"
+      values="0;0;0;0;0;0;1;0.3;1;0"
+      dur="6s" repeatCount="indefinite" begin="2.3s"/>
+    <animate attributeName="x" values="718;716;720;717;718" dur="6s" repeatCount="indefinite" begin="2.3s"/>
+  </rect>
+  <!-- Center-left thin bolt -->
+  <rect x="280" y="30" width="1" height="70" fill="url(#boltGrad)" opacity="0">
+    <animate attributeName="opacity"
+      values="0;0;0;0;0;1;0.2;0.8;0"
+      dur="7s" repeatCount="indefinite" begin="1s"/>
+  </rect>
+
+  <!-- ═══════════════════════════════════════
+       LAYER 7 — SCAN LINES
+  ═══════════════════════════════════════ -->
+  <rect x="0" y="-3" width="860" height="2"
+        fill="none" stroke="url(#borderGrad)" stroke-width="2" opacity="0">
+    <animate attributeName="y"       values="-3;283"    dur="6s" repeatCount="indefinite" begin="0s"/>
+    <animate attributeName="opacity" values="0;1;1;0"   dur="6s" repeatCount="indefinite" begin="0s" keyTimes="0;0.05;0.92;1"/>
+  </rect>
+  <rect x="0" y="-3" width="860" height="2"
+        fill="none" stroke="url(#borderGrad)" stroke-width="1.5" opacity="0">
+    <animate attributeName="y"       values="-3;283"    dur="6s" repeatCount="indefinite" begin="2s"/>
+    <animate attributeName="opacity" values="0;0.7;0.7;0" dur="6s" repeatCount="indefinite" begin="2s" keyTimes="0;0.05;0.92;1"/>
+  </rect>
+  <rect x="0" y="-3" width="860" height="2"
+        fill="none" stroke="url(#borderGrad)" stroke-width="1" opacity="0">
+    <animate attributeName="y"       values="-3;283"    dur="6s" repeatCount="indefinite" begin="4s"/>
+    <animate attributeName="opacity" values="0;0.5;0.5;0" dur="6s" repeatCount="indefinite" begin="4s" keyTimes="0;0.05;0.92;1"/>
+  </rect>
+
+  <!-- ═══════════════════════════════════════
+       BORDERS & CORNER ORNAMENTS
+  ═══════════════════════════════════════ -->
+  <!-- Top border -->
+  <rect x="0" y="0" width="860" height="3" fill="url(#borderGrad)">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="2.5s" repeatCount="indefinite"/>
+  </rect>
+  <!-- Bottom border -->
+  <rect x="0" y="277" width="860" height="3" fill="url(#borderGrad)">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="2.5s" repeatCount="indefinite" begin="1.25s"/>
+  </rect>
+
+  <!-- Corner L-brackets -->
+  <g fill="none" stroke="#ff6b00" stroke-width="1.2" stroke-opacity="0.6">
+    <!-- TL -->
+    <polyline points="22,8 8,8 8,32">
+      <animate attributeName="stroke-opacity" values="0.4;0.8;0.4" dur="3s" repeatCount="indefinite"/>
+    </polyline>
+    <!-- TR -->
+    <polyline points="838,8 852,8 852,32">
+      <animate attributeName="stroke-opacity" values="0.4;0.8;0.4" dur="3s" repeatCount="indefinite" begin="0.75s"/>
+    </polyline>
+    <!-- BL -->
+    <polyline points="22,272 8,272 8,248">
+      <animate attributeName="stroke-opacity" values="0.4;0.8;0.4" dur="3s" repeatCount="indefinite" begin="1.5s"/>
+    </polyline>
+    <!-- BR -->
+    <polyline points="838,272 852,272 852,248">
+      <animate attributeName="stroke-opacity" values="0.4;0.8;0.4" dur="3s" repeatCount="indefinite" begin="2.25s"/>
+    </polyline>
+  </g>
+
+  <!-- Corner kanji -->
+  <text class="corner-kanji" x="15" y="18">忍
+    <animate attributeName="opacity" values="0.35;0.9;0.35" dur="3s" repeatCount="indefinite" begin="0s"/>
+  </text>
+  <text class="corner-kanji" x="845" y="18">術
+    <animate attributeName="opacity" values="0.35;0.9;0.35" dur="3s" repeatCount="indefinite" begin="0.75s"/>
+  </text>
+  <text class="corner-kanji" x="15" y="268">木
+    <animate attributeName="opacity" values="0.35;0.9;0.35" dur="3s" repeatCount="indefinite" begin="1.5s"/>
+  </text>
+  <text class="corner-kanji" x="845" y="268">葉
+    <animate attributeName="opacity" values="0.35;0.9;0.35" dur="3s" repeatCount="indefinite" begin="2.25s"/>
+  </text>
+
+  <!-- ═══════════════════════════════════════
+       LAYER 8 — NAME GLOW BG
+  ═══════════════════════════════════════ -->
+  <ellipse cx="430" cy="122" rx="300" ry="60" fill="url(#nameGlow)">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- ═══════════════════════════════════════
+       LAYER 9 — MAIN TEXT CONTENT
+  ═══════════════════════════════════════ -->
+
+  <!-- Whisker lines -->
+  <line x1="268" y1="74" x2="310" y2="74" stroke="#ff6b00" stroke-width="1.5" stroke-opacity="0.5"/>
+  <line x1="268" y1="79" x2="310" y2="79" stroke="#ff6b00" stroke-width="1"   stroke-opacity="0.3"/>
+  <line x1="268" y1="84" x2="310" y2="84" stroke="#ff6b00" stroke-width="1.5" stroke-opacity="0.5"/>
+  <line x1="550" y1="74" x2="592" y2="74" stroke="#ff6b00" stroke-width="1.5" stroke-opacity="0.5"/>
+  <line x1="550" y1="79" x2="592" y2="79" stroke="#ff6b00" stroke-width="1"   stroke-opacity="0.3"/>
+  <line x1="550" y1="84" x2="592" y2="84" stroke="#ff6b00" stroke-width="1.5" stroke-opacity="0.5"/>
+
+  <!-- Village text top -->
+  <text class="village-text" x="430" y="66" opacity="0">
+    木ノ葉隠れの里  ·  LEAF VILLAGE
+    <animate attributeName="opacity" values="0;0.7" dur="1s" fill="freeze" begin="1.8s"/>
+  </text>
+
+  <!-- NAME — with flicker -->
+  <text class="name-text" x="430" y="128" filter="url(#nameShadow)" opacity="0">
+    KEREM MUTLU
+    <animate attributeName="opacity" values="0;1" dur="0.8s" fill="freeze" begin="0.3s"/>
+    <!-- flicker -->
+    <animate attributeName="opacity"
+      values="1;1;1;1;1;1;1;1;1;0.3;1;1;0.5;1;1;1;1;1;1;1"
+      dur="9s" repeatCount="indefinite" begin="3s"
+      keyTimes="0;0.1;0.2;0.3;0.4;0.5;0.6;0.65;0.68;0.69;0.70;0.75;0.77;0.78;0.8;0.85;0.9;0.95;1"/>
+  </text>
+
+  <!-- JP name -->
+  <text class="jp-text" x="430" y="162" opacity="0">
+    ケレム &amp;nbsp;·&amp;nbsp; ムトゥル
+    <animate attributeName="opacity" values="0;0.9" dur="0.8s" fill="freeze" begin="0.8s"/>
+  </text>
+
+  <!-- Divider line -->
+  <line x1="280" y1="178" x2="580" y2="178" stroke="url(#divGrad)" stroke-width="1" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.6s" fill="freeze" begin="1.1s"/>
+  </line>
+
+  <!-- Subtitle -->
+  <text class="sub-text" x="430" y="200" opacity="0">
+    FULL-STACK DEV  ⚡  LEAF VILLAGE  🍃  DATTEBAYO
+    <animate attributeName="opacity" values="0;1" dur="0.6s" fill="freeze" begin="1.4s"/>
+  </text>
+
+  <!-- Bottom village line -->
+  <text class="village-text" x="430" y="225" opacity="0">
+    DIYARBAKIR, TURKEY  ·  忍者コーダー  ·  OPEN TO S-RANK MISSIONS
+    <animate attributeName="opacity" values="0;0.6" dur="0.6s" fill="freeze" begin="1.7s"/>
+  </text>
+
+</svg>
