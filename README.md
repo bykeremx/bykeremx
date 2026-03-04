@@ -101,21 +101,7 @@
 ## ⚡ &nbsp;Chakra Gauge — Power Level
 
 <div align="center">
-
-┌──────────────────────────────────────────────────────────┐
-│  CHAKRA NATURE   │  SKILL                 │  LEVEL      │
-├──────────────────┼────────────────────────┼─────────────┤
-│  🔥  Katon       │  React        ██████▒░░░ │   75 %     │
-│  💧  Suiton      │  Node.js      ████▒░░░░░ │   60 %     │
-│  🌪  Futon       │  Laravel      █████████░ │   90 %     │
-│  🪨  Doton       │  Docker       ██▒░░░░░░░ │   25 %     │
-│  🌸  Mokuton     │  UI/UX        ████████░░ │   85 %     │
-│  ⚡  Raiton      │  SQL          ███████░░░ │   80 %     │
-│  🧠  Sharingan   │  Architecture ███████▒░░ │   78 %     │
-├──────────────────┴────────────────────────┴─────────────┤
-│      「 Sage Mode: DevOps Arc — Newbie Awakening 」      │
-└──────────────────────────────────────────────────────────┘
-
+<img src="./chakra-gauge.svg" width="760" alt="Chakra Gauge"/>
 </div>
 
 <br/>
