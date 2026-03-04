@@ -28,31 +28,9 @@
 
 ## 🍥 &nbsp;Ninja Registration — `cat /etc/ninja.conf`
 
-<img align="right" width="390" src="https://github-readme-stats.vercel.app/api?username=bykeremx&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&title_color=ff6b00&icon_color=ff6b00&text_color=ffd580&bg_color=0a0005&ring_color=ff6b00&include_all_commits=true" />
-
-```
-  ┌──────────────────────────────────────────────┐
-  │                                              │
-  │  👤  Name    :  Kerem Mutlu                  │
-  │  🏯  Village :  Diyarbakır 🇹🇷 — Leaf Dev   │
-  │  🎴  Class   :  Full-Stack Developer         │
-  │  🌀  Kekkei  :  React + Laravel              │
-  │  ⚡  Affinity:  Node.js · PostgreSQL         │
-  │  🎭  Hobbies :  Code · Music · Art           │
-  │                                              │
-  │  ✦ Rank     :  Jonin-Level Engineer          │
-  │  ✦ Team     :  Open Source Squadron          │
-  │  ✦ Mission  :  Always Shipping  [████▒ 92%] │
-  │  ✦ Chakra   :  Coffee ☕ + Curiosity         │
-  │                                              │
-  └──────────────────────────────────────────────┘
-```
-
-- 🌀 &nbsp;Mastered the **Rasengan of React** — spinning UIs that never shatter
-- 🔥 &nbsp;**Katon: Laravel Blade** — breathing fire into every backend call
-- 🍃 &nbsp;**Shunshin no Deploy** — ships to production before anyone notices
-- 🎹 &nbsp;Electronic music producer — beats activate when the IDE sleeps
-- 🤝 &nbsp;Open to bold shinobi for S-Rank collaboration missions
+<div align="center">
+<img src="./ninja-registration.svg" width="760" alt="Ninja Registration"/>
+</div>
 
 <br clear="right"/>
 
