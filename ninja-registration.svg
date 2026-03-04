@@ -1,0 +1,265 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 340" width="760" height="340">
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="30%" r="80%">
+      <stop offset="0%"   stop-color="#1e0600"/>
+      <stop offset="50%"  stop-color="#0e0200"/>
+      <stop offset="100%" stop-color="#050000"/>
+    </radialGradient>
+    <radialGradient id="cardBg" cx="50%" cy="50%" r="60%">
+      <stop offset="0%"   stop-color="#2a0800" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#080100" stop-opacity="0.6"/>
+    </radialGradient>
+    <radialGradient id="statsBg" cx="50%" cy="30%" r="70%">
+      <stop offset="0%"   stop-color="#1a0500" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#050000" stop-opacity="0.9"/>
+    </radialGradient>
+    <linearGradient id="borderH" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#ff4500" stop-opacity="0"/>
+      <stop offset="20%"  stop-color="#ff6b00" stop-opacity="0.8"/>
+      <stop offset="50%"  stop-color="#ffd470"/>
+      <stop offset="80%"  stop-color="#ff6b00" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ff4500" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="borderV" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#ff4500" stop-opacity="0"/>
+      <stop offset="30%"  stop-color="#ff6b00" stop-opacity="0.6"/>
+      <stop offset="70%"  stop-color="#ff4500" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#ff4500" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="divV" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#ff6b00" stop-opacity="0"/>
+      <stop offset="30%"  stop-color="#ff6b00" stop-opacity="0.5"/>
+      <stop offset="70%"  stop-color="#ff4500" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#ff4500" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="missionBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#ff2200"/>
+      <stop offset="100%" stop-color="#ff8800"/>
+    </linearGradient>
+    <radialGradient id="sealGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#ff6b00" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ff2200" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="textGlow" x="-15%" y="-60%" width="130%" height="220%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="titleGlow" x="-20%" y="-80%" width="140%" height="260%">
+      <feGaussianBlur stdDeviation="3.5" result="b"/>
+      <feColorMatrix in="b" type="matrix" values="3 1 0 0 0  1 0.4 0 0 0  0 0 0 0 0  0 0 0 2 0" result="c"/>
+      <feMerge><feMergeNode in="c"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="badgeGlow" x="-30%" y="-60%" width="160%" height="220%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- ── BG ── -->
+  <rect width="760" height="340" rx="6" fill="url(#bg)"/>
+
+  <!-- subtle kanji watermark -->
+  <g font-family="serif" text-anchor="middle" dominant-baseline="middle" fill="#ff4400" opacity="0.04">
+    <text x="80"  y="60"  font-size="55">忍</text>
+    <text x="680" y="280" font-size="55">葉</text>
+    <text x="680" y="60"  font-size="40">木</text>
+    <text x="80"  y="280" font-size="40">術</text>
+    <text x="380" y="170" font-size="80" opacity="0.025">九</text>
+  </g>
+
+  <!-- outer border -->
+  <rect x="1" y="1" width="758" height="338" rx="6" fill="none" stroke="url(#borderH)" stroke-width="1.5">
+    <animate attributeName="opacity" values="0.65;1;0.65" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  <line x1="1"   y1="1" x2="1"   y2="339" stroke="url(#borderV)" stroke-width="1.5"/>
+  <line x1="759" y1="1" x2="759" y2="339" stroke="url(#borderV)" stroke-width="1.5"/>
+
+  <!-- corner brackets -->
+  <g fill="none" stroke="#ff6b00" stroke-width="1.5">
+    <polyline points="22,6 6,6 6,28"><animate attributeName="stroke-opacity" values="0.35;1;0.35" dur="3s" repeatCount="indefinite" begin="0s"/></polyline>
+    <polyline points="738,6 754,6 754,28"><animate attributeName="stroke-opacity" values="0.35;1;0.35" dur="3s" repeatCount="indefinite" begin="0.75s"/></polyline>
+    <polyline points="22,334 6,334 6,312"><animate attributeName="stroke-opacity" values="0.35;1;0.35" dur="3s" repeatCount="indefinite" begin="1.5s"/></polyline>
+    <polyline points="738,334 754,334 754,312"><animate attributeName="stroke-opacity" values="0.35;1;0.35" dur="3s" repeatCount="indefinite" begin="2.25s"/></polyline>
+  </g>
+  <g font-family="serif" text-anchor="middle" dominant-baseline="middle" font-size="11" fill="#ff6b00">
+    <text x="14" y="16"><animate attributeName="opacity" values="0.3;0.9;0.3" dur="3s" repeatCount="indefinite" begin="0s"/>忍</text>
+    <text x="746" y="16"><animate attributeName="opacity" values="0.3;0.9;0.3" dur="3s" repeatCount="indefinite" begin="0.75s"/>術</text>
+    <text x="14" y="326"><animate attributeName="opacity" values="0.3;0.9;0.3" dur="3s" repeatCount="indefinite" begin="1.5s"/>木</text>
+    <text x="746" y="326"><animate attributeName="opacity" values="0.3;0.9;0.3" dur="3s" repeatCount="indefinite" begin="2.25s"/>葉</text>
+  </g>
+
+  <!-- ── TITLE BAR ── -->
+  <line x1="20" y1="52" x2="740" y2="52" stroke="url(#borderH)" stroke-width="0.8" opacity="0.5"/>
+  <text x="380" y="30"
+    font-family="Georgia, serif" font-size="14" font-weight="700"
+    fill="#ffd470" text-anchor="middle" dominant-baseline="middle"
+    letter-spacing="5" filter="url(#titleGlow)">
+    🍥  NINJA REGISTRATION  —  cat /etc/ninja.conf
+    <animate attributeName="opacity" values="0.85;1;0.85" dur="2.5s" repeatCount="indefinite"/>
+  </text>
+  <text x="380" y="44"
+    font-family="serif" font-size="9" fill="#ff6b00"
+    text-anchor="middle" dominant-baseline="middle" letter-spacing="5" opacity="0.55">
+    木ノ葉隠れの里  ·  LEAF VILLAGE SHINOBI FILE  ·  S-RANK
+  </text>
+
+  <!-- ════════════════════════════
+       LEFT: IDENTITY CARD
+  ════════════════════════════ -->
+  <!-- card bg -->
+  <rect x="18" y="60" width="338" height="268" rx="4" fill="url(#cardBg)" stroke="#ff440033" stroke-width="1"/>
+
+  <!-- seal glow behind photo placeholder -->
+  <circle cx="80" cy="108" r="42" fill="url(#sealGlow)">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <!-- photo frame (hexagon-ish via polygon) -->
+  <polygon points="80,68 114,87 114,125 80,144 46,125 46,87"
+    fill="#1a0500" stroke="#ff5500" stroke-width="1.5" stroke-opacity="0.7"/>
+  <!-- avatar initials -->
+  <text x="80" y="107" font-family="Georgia, serif" font-size="28" font-weight="900"
+    fill="#ff6b00" text-anchor="middle" dominant-baseline="middle"
+    filter="url(#textGlow)">KM</text>
+  <text x="80" y="132" font-family="serif" font-size="9"
+    fill="#ff9944" text-anchor="middle" dominant-baseline="middle" letter-spacing="2" opacity="0.8">SHINOBI</text>
+  <!-- spinning seal ring around photo -->
+  <circle cx="80" cy="106" r="44" fill="none" stroke="#ff440055" stroke-width="1" stroke-dasharray="4,10">
+    <animateTransform attributeName="transform" type="rotate" values="0 80 106;360 80 106" dur="12s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="80" cy="106" r="38" fill="none" stroke="#ff6b0033" stroke-width="0.8" stroke-dasharray="2,6">
+    <animateTransform attributeName="transform" type="rotate" values="0 80 106;-360 80 106" dur="8s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- identity fields -->
+  <g font-family="'Courier New', monospace" dominant-baseline="middle">
+    <!-- Name -->
+    <text x="140" y="74"  font-size="9"  fill="#ff6b0088" letter-spacing="2">NAME</text>
+    <text x="140" y="88"  font-size="13" font-weight="700" fill="#ffffff" filter="url(#textGlow)">Kerem Mutlu</text>
+    <!-- Village -->
+    <text x="140" y="106" font-size="9"  fill="#ff6b0088" letter-spacing="2">VILLAGE</text>
+    <text x="140" y="120" font-size="12" fill="#ffd470">Diyarbakır, Turkey 🇹🇷</text>
+    <!-- Class -->
+    <text x="140" y="138" font-size="9"  fill="#ff6b0088" letter-spacing="2">CLASS</text>
+    <text x="140" y="152" font-size="12" fill="#ff9944">Full-Stack Developer</text>
+  </g>
+
+  <!-- divider -->
+  <line x1="30" y1="162" x2="348" y2="162" stroke="#ff440033" stroke-width="1"/>
+
+  <!-- jutsu / affinity fields -->
+  <g font-family="'Courier New', monospace" dominant-baseline="middle">
+    <text x="30" y="178" font-size="9" fill="#ff6b0077" letter-spacing="2">KEKKEI GENKAI</text>
+    <text x="30" y="193" font-size="12" font-weight="700" fill="#61dafb" filter="url(#textGlow)">React</text>
+    <text x="90" y="193" font-size="11" fill="#ff6b0066">+</text>
+    <text x="106" y="193" font-size="12" font-weight="700" fill="#ff2d20" filter="url(#textGlow)">Laravel</text>
+
+    <text x="30" y="212" font-size="9" fill="#ff6b0077" letter-spacing="2">AFFINITY</text>
+    <text x="30" y="227" font-size="12" fill="#44dd88">Node.js</text>
+    <text x="100" y="227" font-size="11" fill="#ff6b0055">·</text>
+    <text x="115" y="227" font-size="12" fill="#4479a1">MySQL</text>
+
+    <text x="30" y="246" font-size="9" fill="#ff6b0077" letter-spacing="2">HOBBIES</text>
+    <text x="30" y="261" font-size="12" fill="#ffcc66">Code · Music · Art</text>
+  </g>
+
+  <!-- divider -->
+  <line x1="30" y1="272" x2="348" y2="272" stroke="#ff440033" stroke-width="1"/>
+
+  <!-- mission / rank / chakra -->
+  <g font-family="'Courier New', monospace" dominant-baseline="middle">
+    <!-- Rank badge -->
+    <rect x="30" y="280" width="72" height="20" rx="10" fill="#ff220033" stroke="#ff440066" stroke-width="1"/>
+    <text x="66" y="291" font-size="9" font-weight="700" fill="#ff8844" text-anchor="middle" letter-spacing="1">JONIN</text>
+
+    <!-- Mission bar -->
+    <text x="114" y="282" font-size="8" fill="#ff6b0077" letter-spacing="1">MISSION</text>
+    <rect x="114" y="287" width="140" height="8" rx="4" fill="#ffffff0d"/>
+    <rect x="114" y="287" width="0"   height="8" rx="4" fill="url(#missionBar)">
+      <animate attributeName="width" values="0;129" dur="1.2s" fill="freeze" begin="0.8s" calcMode="spline" keySplines="0.4,0,0.2,1"/>
+    </rect>
+    <text x="262" y="291" font-size="9" fill="#ff8844" dominant-baseline="middle">92%</text>
+
+    <!-- Chakra -->
+    <text x="30" y="312" font-size="11" fill="#ffcc66">⚡ Chakra: Coffee ☕ + Curiosity</text>
+  </g>
+
+  <!-- ════════════════════════════
+       VERTICAL DIVIDER
+  ════════════════════════════ -->
+  <line x1="364" y1="60" x2="364" y2="328" stroke="url(#divV)" stroke-width="1"/>
+
+  <!-- ════════════════════════════
+       RIGHT: JUTSU ABILITIES
+  ════════════════════════════ -->
+  <rect x="372" y="60" width="372" height="268" rx="4" fill="url(#statsBg)" stroke="#ff440022" stroke-width="1"/>
+
+  <text x="558" y="76"
+    font-family="'Courier New', monospace" font-size="9"
+    fill="#ff6b0077" text-anchor="middle" dominant-baseline="middle" letter-spacing="3">
+    ACTIVE JUTSU  ·  ABILITIES
+  </text>
+  <line x1="382" y1="84" x2="736" y2="84" stroke="#ff440022" stroke-width="1"/>
+
+  <!-- ── JUTSU ROWS ── -->
+  <!-- macro: y, emoji+text, desc, color, delay -->
+
+  <!-- 1 -->
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" fill="freeze" begin="0.2s"/>
+    <rect x="380" y="90" width="356" height="38" rx="3" fill="#ff220008"/>
+    <circle cx="400" cy="109" r="14" fill="#ff220022" stroke="#ff440044" stroke-width="1"/>
+    <text x="400" y="109" font-family="serif" font-size="14" text-anchor="middle" dominant-baseline="middle">🌀</text>
+    <text x="422" y="102" font-family="'Courier New', monospace" font-size="11" font-weight="700" fill="#ff8844" dominant-baseline="middle">Rasengan of React</text>
+    <text x="422" y="118" font-family="'Courier New', monospace" font-size="9"  fill="#ff6b0099" dominant-baseline="middle">Spinning UIs that never shatter</text>
+  </g>
+
+  <!-- 2 -->
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" fill="freeze" begin="0.4s"/>
+    <rect x="380" y="132" width="356" height="38" rx="3" fill="#ff110008"/>
+    <circle cx="400" cy="151" r="14" fill="#ff110022" stroke="#ff330044" stroke-width="1"/>
+    <text x="400" y="151" font-family="serif" font-size="14" text-anchor="middle" dominant-baseline="middle">🔥</text>
+    <text x="422" y="144" font-family="'Courier New', monospace" font-size="11" font-weight="700" fill="#ff6644" dominant-baseline="middle">Katon: Laravel Blade</text>
+    <text x="422" y="160" font-family="'Courier New', monospace" font-size="9"  fill="#ff6b0099" dominant-baseline="middle">Breathing fire into every backend call</text>
+  </g>
+
+  <!-- 3 -->
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" fill="freeze" begin="0.6s"/>
+    <rect x="380" y="174" width="356" height="38" rx="3" fill="#00330808"/>
+    <circle cx="400" cy="193" r="14" fill="#00330822" stroke="#00551144" stroke-width="1"/>
+    <text x="400" y="193" font-family="serif" font-size="14" text-anchor="middle" dominant-baseline="middle">🍃</text>
+    <text x="422" y="186" font-family="'Courier New', monospace" font-size="11" font-weight="700" fill="#44dd88" dominant-baseline="middle">Shunshin no Deploy</text>
+    <text x="422" y="202" font-family="'Courier New', monospace" font-size="9"  fill="#ff6b0099" dominant-baseline="middle">Ships before anyone notices</text>
+  </g>
+
+  <!-- 4 -->
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" fill="freeze" begin="0.8s"/>
+    <rect x="380" y="216" width="356" height="38" rx="3" fill="#22004408"/>
+    <circle cx="400" cy="235" r="14" fill="#22004422" stroke="#44006644" stroke-width="1"/>
+    <text x="400" y="235" font-family="serif" font-size="14" text-anchor="middle" dominant-baseline="middle">🎹</text>
+    <text x="422" y="228" font-family="'Courier New', monospace" font-size="11" font-weight="700" fill="#cc88ff" dominant-baseline="middle">Sound Jutsu: Music</text>
+    <text x="422" y="244" font-family="'Courier New', monospace" font-size="9"  fill="#ff6b0099" dominant-baseline="middle">Beats activate when the IDE sleeps</text>
+  </g>
+
+  <!-- 5 -->
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" fill="freeze" begin="1s"/>
+    <rect x="380" y="258" width="356" height="38" rx="3" fill="#22220008"/>
+    <circle cx="400" cy="277" r="14" fill="#22220022" stroke="#44440044" stroke-width="1"/>
+    <text x="400" y="277" font-family="serif" font-size="14" text-anchor="middle" dominant-baseline="middle">🤝</text>
+    <text x="422" y="270" font-family="'Courier New', monospace" font-size="11" font-weight="700" fill="#ffd470" dominant-baseline="middle">Kage no Michi: Collab</text>
+    <text x="422" y="286" font-family="'Courier New', monospace" font-size="9"  fill="#ff6b0099" dominant-baseline="middle">Open for S-Rank missions</text>
+  </g>
+
+  <!-- ── FOOTER ── -->
+  <line x1="20" y1="330" x2="740" y2="330" stroke="url(#borderH)" stroke-width="0.8" opacity="0.4"/>
+  <text x="380" y="336"
+    font-family="serif" font-size="8.5" fill="#ff6b0066"
+    text-anchor="middle" dominant-baseline="middle" letter-spacing="4" opacity="0">
+    DIYARBAKIR, TURKEY  ·  JONIN RANK  ·  LEAF VILLAGE  ·  ALWAYS SHIPPING
+    <animate attributeName="opacity" values="0;0.7" dur="0.6s" fill="freeze" begin="1.3s"/>
+  </text>
+
+  <!-- subtle pulse overlay -->
+  <rect width="760" height="340" rx="6" fill="#ff440000">
+    <animate attributeName="fill" values="#ff440000;#ff220006;#ff440000" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
+</svg>
