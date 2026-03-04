@@ -1,0 +1,269 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" width="760" height="420">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%"   stop-color="#1a0800"/>
+      <stop offset="60%"  stop-color="#0d0200"/>
+      <stop offset="100%" stop-color="#050000"/>
+    </radialGradient>
+    <linearGradient id="borderH" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#ff4500" stop-opacity="0"/>
+      <stop offset="20%"  stop-color="#ff6b00" stop-opacity="0.7"/>
+      <stop offset="50%"  stop-color="#ffd470"/>
+      <stop offset="80%"  stop-color="#ff6b00" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#ff4500" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="borderV" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#ff4500" stop-opacity="0"/>
+      <stop offset="20%"  stop-color="#ff6b00" stop-opacity="0.5"/>
+      <stop offset="50%"  stop-color="#ff4500" stop-opacity="0.7"/>
+      <stop offset="80%"  stop-color="#ff6b00" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#ff4500" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- bar gradients per element -->
+    <linearGradient id="barKaton"    x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#ff2200"/><stop offset="100%" stop-color="#ff8800"/></linearGradient>
+    <linearGradient id="barSuiton"   x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#0044cc"/><stop offset="100%" stop-color="#44aaff"/></linearGradient>
+    <linearGradient id="barFuton"    x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#005522"/><stop offset="100%" stop-color="#44ff88"/></linearGradient>
+    <linearGradient id="barDoton"    x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#553300"/><stop offset="100%" stop-color="#cc8833"/></linearGradient>
+    <linearGradient id="barMokuton"  x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#880033"/><stop offset="100%" stop-color="#ff66aa"/></linearGradient>
+    <linearGradient id="barRaiton"   x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#332200"/><stop offset="100%" stop-color="#ffee44"/></linearGradient>
+    <linearGradient id="barSharingan" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#550000"/><stop offset="100%" stop-color="#cc0000"/></linearGradient>
+
+    <filter id="barGlow" x="-5%" y="-80%" width="110%" height="260%">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="textGlow" x="-10%" y="-40%" width="120%" height="180%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="titleGlow" x="-20%" y="-80%" width="140%" height="260%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feColorMatrix in="b" type="matrix" values="3 1 0 0 0  1 0.4 0 0 0  0 0 0 0 0  0 0 0 2 0" result="c"/>
+      <feMerge><feMergeNode in="c"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- BG -->
+  <rect width="760" height="420" rx="6" fill="url(#bg)"/>
+
+  <!-- outer border glow -->
+  <rect x="1" y="1" width="758" height="418" rx="6" fill="none" stroke="url(#borderH)" stroke-width="1.5" opacity="0.8">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  <!-- side borders -->
+  <line x1="1" y1="1" x2="1" y2="419" stroke="url(#borderV)" stroke-width="1.5" opacity="0.6"/>
+  <line x1="759" y1="1" x2="759" y2="419" stroke="url(#borderV)" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- corner brackets -->
+  <g fill="none" stroke="#ff6b00" stroke-width="1.5">
+    <polyline points="20,6 6,6 6,26"><animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite" begin="0s"/></polyline>
+    <polyline points="740,6 754,6 754,26"><animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite" begin="0.75s"/></polyline>
+    <polyline points="20,414 6,414 6,394"><animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite" begin="1.5s"/></polyline>
+    <polyline points="740,414 754,414 754,394"><animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite" begin="2.25s"/></polyline>
+  </g>
+  <g font-family="serif" text-anchor="middle" dominant-baseline="middle" font-size="11" fill="#ff6b00">
+    <text x="14" y="16" opacity="0.5"><animate attributeName="opacity" values="0.3;0.9;0.3" dur="3s" repeatCount="indefinite" begin="0s"/>忍</text>
+    <text x="746" y="16" opacity="0.5"><animate attributeName="opacity" values="0.3;0.9;0.3" dur="3s" repeatCount="indefinite" begin="0.75s"/>術</text>
+    <text x="14" y="406" opacity="0.5"><animate attributeName="opacity" values="0.3;0.9;0.3" dur="3s" repeatCount="indefinite" begin="1.5s"/>木</text>
+    <text x="746" y="406" opacity="0.5"><animate attributeName="opacity" values="0.3;0.9;0.3" dur="3s" repeatCount="indefinite" begin="2.25s"/>葉</text>
+  </g>
+
+  <!-- top section header line -->
+  <line x1="30" y1="62" x2="730" y2="62" stroke="url(#borderH)" stroke-width="0.8" opacity="0.5"/>
+  <!-- bottom section line -->
+  <line x1="30" y1="382" x2="730" y2="382" stroke="url(#borderH)" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- ═══ TITLE ═══ -->
+  <text x="380" y="36"
+    font-family="Georgia, serif" font-size="15" font-weight="700"
+    fill="#ffd470" text-anchor="middle" dominant-baseline="middle"
+    letter-spacing="5" filter="url(#titleGlow)">
+    ⚡  CHAKRA GAUGE  —  POWER LEVEL  ⚡
+    <animate attributeName="opacity" values="0.85;1;0.85" dur="2.5s" repeatCount="indefinite"/>
+  </text>
+  <text x="380" y="52"
+    font-family="serif" font-size="9"
+    fill="#ff6b00" text-anchor="middle" dominant-baseline="middle"
+    letter-spacing="6" opacity="0.6">
+    忍術  ·  JUTSU PROFICIENCY SCROLL  ·  忍術
+  </text>
+
+  <!-- ═══ COLUMN HEADERS ═══ -->
+  <text x="80"  y="78" font-family="'Courier New', monospace" font-size="9" fill="#ff6b0099" text-anchor="middle" letter-spacing="2">NATURE</text>
+  <text x="195" y="78" font-family="'Courier New', monospace" font-size="9" fill="#ff6b0099" text-anchor="middle" letter-spacing="2">JUTSU / SKILL</text>
+  <text x="490" y="78" font-family="'Courier New', monospace" font-size="9" fill="#ff6b0099" text-anchor="start"  letter-spacing="2">PROFICIENCY</text>
+  <text x="700" y="78" font-family="'Courier New', monospace" font-size="9" fill="#ff6b0099" text-anchor="middle" letter-spacing="2">RANK</text>
+
+  <!-- divider after headers -->
+  <line x1="30" y1="86" x2="730" y2="86" stroke="#ff440033" stroke-width="1"/>
+
+  <!-- ═══════════════════════════════
+       ROW MACRO:
+       y_center, icon, nature, skill, barGrad, pct (0-220), rankText, rankColor, delay
+  ═══════════════════════════════ -->
+
+  <!-- ── ROW 1: Katon / React — 75% ── -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.4s" fill="freeze" begin="0.1s"/>
+    <!-- row bg hover tint -->
+    <rect x="28" y="92" width="704" height="38" rx="3" fill="#ff220008"/>
+    <!-- nature badge -->
+    <rect x="32" y="96" width="98" height="26" rx="3" fill="#ff220022" stroke="#ff440044" stroke-width="1"/>
+    <text x="82" y="109" font-family="serif" font-size="13" fill="#ff6644" text-anchor="middle" dominant-baseline="middle">🔥 Katon</text>
+    <!-- skill name -->
+    <text x="200" y="109" font-family="'Courier New', monospace" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" filter="url(#textGlow)">React</text>
+    <!-- bar track -->
+    <rect x="318" y="102" width="220" height="12" rx="6" fill="#ffffff0d"/>
+    <!-- bar fill -->
+    <rect x="318" y="102" width="0" height="12" rx="6" fill="url(#barKaton)" filter="url(#barGlow)">
+      <animate attributeName="width" values="0;165" dur="1s" fill="freeze" begin="0.5s" calcMode="spline" keySplines="0.4,0,0.2,1"/>
+    </rect>
+    <!-- tick marks on track -->
+    <line x1="362" y1="102" x2="362" y2="114" stroke="#ffffff11" stroke-width="1"/>
+    <line x1="406" y1="102" x2="406" y2="114" stroke="#ffffff11" stroke-width="1"/>
+    <line x1="450" y1="102" x2="450" y2="114" stroke="#ffffff11" stroke-width="1"/>
+    <line x1="494" y1="102" x2="494" y2="114" stroke="#ffffff11" stroke-width="1"/>
+    <!-- pct label -->
+    <text x="548" y="109" font-family="'Courier New', monospace" font-size="13" font-weight="700" fill="#ff8844" text-anchor="start" dominant-baseline="middle">75%</text>
+    <!-- rank -->
+    <rect x="662" y="97" width="68" height="22" rx="11" fill="#ff220033" stroke="#ff440066" stroke-width="1"/>
+    <text x="696" y="109" font-family="serif" font-size="10" font-weight="700" fill="#ff8844" text-anchor="middle" dominant-baseline="middle" letter-spacing="1">CHUNIN</text>
+  </g>
+
+  <!-- ── ROW 2: Suiton / Node.js — 60% ── -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.4s" fill="freeze" begin="0.25s"/>
+    <rect x="28" y="134" width="704" height="38" rx="3" fill="#00224408"/>
+    <rect x="32" y="138" width="98" height="26" rx="3" fill="#0033aa22" stroke="#0055cc44" stroke-width="1"/>
+    <text x="82" y="151" font-family="serif" font-size="13" fill="#44aaff" text-anchor="middle" dominant-baseline="middle">💧 Suiton</text>
+    <text x="200" y="151" font-family="'Courier New', monospace" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" filter="url(#textGlow)">Node.js</text>
+    <rect x="318" y="144" width="220" height="12" rx="6" fill="#ffffff0d"/>
+    <rect x="318" y="144" width="0" height="12" rx="6" fill="url(#barSuiton)" filter="url(#barGlow)">
+      <animate attributeName="width" values="0;132" dur="1s" fill="freeze" begin="0.65s" calcMode="spline" keySplines="0.4,0,0.2,1"/>
+    </rect>
+    <line x1="362" y1="144" x2="362" y2="156" stroke="#ffffff11" stroke-width="1"/>
+    <line x1="406" y1="144" x2="406" y2="156" stroke="#ffffff11" stroke-width="1"/>
+    <line x1="450" y1="144" x2="450" y2="156" stroke="#ffffff11" stroke-width="1"/>
+    <line x1="494" y1="144" x2="494" y2="156" stroke="#ffffff11" stroke-width="1"/>
+    <text x="548" y="151" font-family="'Courier New', monospace" font-size="13" font-weight="700" fill="#44aaff" text-anchor="start" dominant-baseline="middle">60%</text>
+    <rect x="662" y="139" width="68" height="22" rx="11" fill="#0033aa33" stroke="#0055cc66" stroke-width="1"/>
+    <text x="696" y="151" font-family="serif" font-size="10" font-weight="700" fill="#44aaff" text-anchor="middle" dominant-baseline="middle" letter-spacing="1">GENIN</text>
+  </g>
+
+  <!-- ── ROW 3: Futon / Laravel — 90% ── -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.4s" fill="freeze" begin="0.4s"/>
+    <rect x="28" y="176" width="704" height="38" rx="3" fill="#00441108"/>
+    <rect x="32" y="180" width="98" height="26" rx="3" fill="#00441122" stroke="#00662244" stroke-width="1"/>
+    <text x="82" y="193" font-family="serif" font-size="13" fill="#44ff88" text-anchor="middle" dominant-baseline="middle">🌪 Futon</text>
+    <text x="200" y="193" font-family="'Courier New', monospace" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" filter="url(#textGlow)">Laravel</text>
+    <rect x="318" y="186" width="220" height="12" rx="6" fill="#ffffff0d"/>
+    <rect x="318" y="186" width="0" height="12" rx="6" fill="url(#barFuton)" filter="url(#barGlow)">
+      <animate attributeName="width" values="0;198" dur="1s" fill="freeze" begin="0.8s" calcMode="spline" keySplines="0.4,0,0.2,1"/>
+    </rect>
+    <line x1="362" y1="186" x2="362" y2="198" stroke="#ffffff11" stroke-width="1"/>
+    <line x1="406" y1="186" x2="406" y2="198" stroke="#ffffff11" stroke-width="1"/>
+    <line x1="450" y1="186" x2="450" y2="198" stroke="#ffffff11" stroke-width="1"/>
+    <line x1="494" y1="186" x2="494" y2="198" stroke="#ffffff11" stroke-width="1"/>
+    <text x="548" y="193" font-family="'Courier New', monospace" font-size="13" font-weight="700" fill="#44ff88" text-anchor="start" dominant-baseline="middle">90%</text>
+    <rect x="662" y="181" width="68" height="22" rx="11" fill="#00441133" stroke="#00882266" stroke-width="1"/>
+    <text x="696" y="193" font-family="serif" font-size="10" font-weight="700" fill="#44ff88" text-anchor="middle" dominant-baseline="middle" letter-spacing="1">JONIN</text>
+  </g>
+
+  <!-- ── ROW 4: Doton / Docker — 25% ── -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.4s" fill="freeze" begin="0.55s"/>
+    <rect x="28" y="218" width="704" height="38" rx="3" fill="#33110008"/>
+    <rect x="32" y="222" width="98" height="26" rx="3" fill="#33110022" stroke="#55330044" stroke-width="1"/>
+    <text x="82" y="235" font-family="serif" font-size="13" fill="#cc8833" text-anchor="middle" dominant-baseline="middle">🪨 Doton</text>
+    <text x="200" y="235" font-family="'Courier New', monospace" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" filter="url(#textGlow)">Docker</text>
+    <rect x="318" y="228" width="220" height="12" rx="6" fill="#ffffff0d"/>
+    <rect x="318" y="228" width="0" height="12" rx="6" fill="url(#barDoton)" filter="url(#barGlow)">
+      <animate attributeName="width" values="0;55" dur="1s" fill="freeze" begin="0.95s" calcMode="spline" keySplines="0.4,0,0.2,1"/>
+    </rect>
+    <line x1="362" y1="228" x2="362" y2="240" stroke="#ffffff11" stroke-width="1"/>
+    <line x1="406" y1="228" x2="406" y2="240" stroke="#ffffff11" stroke-width="1"/>
+    <line x1="450" y1="228" x2="450" y2="240" stroke="#ffffff11" stroke-width="1"/>
+    <line x1="494" y1="228" x2="494" y2="240" stroke="#ffffff11" stroke-width="1"/>
+    <text x="548" y="235" font-family="'Courier New', monospace" font-size="13" font-weight="700" fill="#cc8833" text-anchor="start" dominant-baseline="middle">25%</text>
+    <rect x="662" y="223" width="68" height="22" rx="11" fill="#33110033" stroke="#55330066" stroke-width="1"/>
+    <text x="696" y="235" font-family="serif" font-size="9" font-weight="700" fill="#cc8833" text-anchor="middle" dominant-baseline="middle" letter-spacing="1">ACADEMY</text>
+  </g>
+
+  <!-- ── ROW 5: Mokuton / UI-UX — 85% ── -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.4s" fill="freeze" begin="0.7s"/>
+    <rect x="28" y="260" width="704" height="38" rx="3" fill="#44001108"/>
+    <rect x="32" y="264" width="98" height="26" rx="3" fill="#44001122" stroke="#66003344" stroke-width="1"/>
+    <text x="82" y="277" font-family="serif" font-size="13" fill="#ff66aa" text-anchor="middle" dominant-baseline="middle">🌸 Mokuton</text>
+    <text x="200" y="277" font-family="'Courier New', monospace" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" filter="url(#textGlow)">UI / UX</text>
+    <rect x="318" y="270" width="220" height="12" rx="6" fill="#ffffff0d"/>
+    <rect x="318" y="270" width="0" height="12" rx="6" fill="url(#barMokuton)" filter="url(#barGlow)">
+      <animate attributeName="width" values="0;187" dur="1s" fill="freeze" begin="1.1s" calcMode="spline" keySplines="0.4,0,0.2,1"/>
+    </rect>
+    <line x1="362" y1="270" x2="362" y2="282" stroke="#ffffff11" stroke-width="1"/>
+    <line x1="406" y1="270" x2="406" y2="282" stroke="#ffffff11" stroke-width="1"/>
+    <line x1="450" y1="270" x2="450" y2="282" stroke="#ffffff11" stroke-width="1"/>
+    <line x1="494" y1="270" x2="494" y2="282" stroke="#ffffff11" stroke-width="1"/>
+    <text x="548" y="277" font-family="'Courier New', monospace" font-size="13" font-weight="700" fill="#ff66aa" text-anchor="start" dominant-baseline="middle">85%</text>
+    <rect x="662" y="265" width="68" height="22" rx="11" fill="#44001133" stroke="#66003366" stroke-width="1"/>
+    <text x="696" y="277" font-family="serif" font-size="10" font-weight="700" fill="#ff66aa" text-anchor="middle" dominant-baseline="middle" letter-spacing="1">JONIN</text>
+  </g>
+
+  <!-- ── ROW 6: Raiton / SQL — 80% ── -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.4s" fill="freeze" begin="0.85s"/>
+    <rect x="28" y="302" width="704" height="38" rx="3" fill="#33220008"/>
+    <rect x="32" y="306" width="98" height="26" rx="3" fill="#33220022" stroke="#55440044" stroke-width="1"/>
+    <text x="82" y="319" font-family="serif" font-size="13" fill="#ffee44" text-anchor="middle" dominant-baseline="middle">⚡ Raiton</text>
+    <text x="200" y="319" font-family="'Courier New', monospace" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" filter="url(#textGlow)">SQL</text>
+    <rect x="318" y="312" width="220" height="12" rx="6" fill="#ffffff0d"/>
+    <rect x="318" y="312" width="0" height="12" rx="6" fill="url(#barRaiton)" filter="url(#barGlow)">
+      <animate attributeName="width" values="0;176" dur="1s" fill="freeze" begin="1.25s" calcMode="spline" keySplines="0.4,0,0.2,1"/>
+    </rect>
+    <line x1="362" y1="312" x2="362" y2="324" stroke="#ffffff11" stroke-width="1"/>
+    <line x1="406" y1="312" x2="406" y2="324" stroke="#ffffff11" stroke-width="1"/>
+    <line x1="450" y1="312" x2="450" y2="324" stroke="#ffffff11" stroke-width="1"/>
+    <line x1="494" y1="312" x2="494" y2="324" stroke="#ffffff11" stroke-width="1"/>
+    <text x="548" y="319" font-family="'Courier New', monospace" font-size="13" font-weight="700" fill="#ffee44" text-anchor="start" dominant-baseline="middle">80%</text>
+    <rect x="662" y="307" width="68" height="22" rx="11" fill="#33220033" stroke="#55440066" stroke-width="1"/>
+    <text x="696" y="319" font-family="serif" font-size="10" font-weight="700" fill="#ffee44" text-anchor="middle" dominant-baseline="middle" letter-spacing="1">JONIN</text>
+  </g>
+
+  <!-- ── ROW 7: Sharingan / Architecture — 78% ── -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.4s" fill="freeze" begin="1s"/>
+    <rect x="28" y="344" width="704" height="34" rx="3" fill="#33000008"/>
+    <rect x="32" y="348" width="98" height="26" rx="3" fill="#33000022" stroke="#55000044" stroke-width="1"/>
+    <text x="82" y="361" font-family="serif" font-size="12" fill="#cc3333" text-anchor="middle" dominant-baseline="middle">🧠 Sharingan</text>
+    <text x="200" y="361" font-family="'Courier New', monospace" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" filter="url(#textGlow)">Architecture</text>
+    <rect x="318" y="354" width="220" height="12" rx="6" fill="#ffffff0d"/>
+    <rect x="318" y="354" width="0" height="12" rx="6" fill="url(#barSharingan)" filter="url(#barGlow)">
+      <animate attributeName="width" values="0;172" dur="1s" fill="freeze" begin="1.4s" calcMode="spline" keySplines="0.4,0,0.2,1"/>
+    </rect>
+    <line x1="362" y1="354" x2="362" y2="366" stroke="#ffffff11" stroke-width="1"/>
+    <line x1="406" y1="354" x2="406" y2="366" stroke="#ffffff11" stroke-width="1"/>
+    <line x1="450" y1="354" x2="450" y2="366" stroke="#ffffff11" stroke-width="1"/>
+    <line x1="494" y1="354" x2="494" y2="366" stroke="#ffffff11" stroke-width="1"/>
+    <text x="548" y="361" font-family="'Courier New', monospace" font-size="13" font-weight="700" fill="#cc3333" text-anchor="start" dominant-baseline="middle">78%</text>
+    <rect x="662" y="349" width="68" height="22" rx="11" fill="#33000033" stroke="#55000066" stroke-width="1"/>
+    <text x="696" y="361" font-family="serif" font-size="10" font-weight="700" fill="#cc4444" text-anchor="middle" dominant-baseline="middle" letter-spacing="1">CHUNIN</text>
+  </g>
+
+  <!-- ═══ FOOTER ═══ -->
+  <text x="380" y="398"
+    font-family="'Courier New', monospace" font-size="11"
+    fill="#ffd470" text-anchor="middle" dominant-baseline="middle"
+    letter-spacing="2" opacity="0">
+    「 Sage Mode: DevOps Arc — Newbie Awakening 」
+    <animate attributeName="opacity" values="0;0.85" dur="0.6s" fill="freeze" begin="1.6s"/>
+    <animate attributeName="opacity" values="0.65;1;0.65" dur="2.8s" repeatCount="indefinite" begin="2.5s"/>
+  </text>
+
+  <!-- subtle bg pulse -->
+  <rect width="760" height="420" rx="6" fill="#ff440000">
+    <animate attributeName="fill" values="#ff440000;#ff220008;#ff440000" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
+</svg>
